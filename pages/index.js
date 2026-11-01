@@ -102,7 +102,7 @@ function Home() {
         <Typography variant="overline" color="primary" sx={{ textAlign: 'center', fontWeight: 'bold', fontSize: '1.2rem'}}>
           Save the Date
         </Typography>
-        <Typography variant="h2" sx={{ textAlign: 'center'}}>Saturday</Typography>
+        <Typography variant="h2" sx={{ fontSize: '2.75rem', textAlign: 'center'}}>Saturday</Typography>
         <Typography sx={{ opacity: 0.9, fontSize: '2.5rem', textAlign: 'center', fontStyle: 'italic', fontWeight: 300 }}>
           February 6, 2027
         </Typography>

@@ -62,7 +62,7 @@ function Home() {
           You&apos;re invited to celebrate
         </Typography>
         <Typography sx={{ textAlign: 'center'}} variant="h1" component="h1">
-          Eric &amp; Laura&apos;s
+          Laura &amp; Eric&apos;s
           <br />
           Anniversary
         </Typography>
@@ -139,7 +139,7 @@ function Home() {
         }}
       >
         <Typography variant="overline" color="text.secondary">
-          Eric &amp; Laura · 2026
+          Laura &amp; Eric · 2026
         </Typography>
       </Box>
     </Box>

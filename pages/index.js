@@ -7,6 +7,7 @@ import Button from '@mui/material/Button'
 import Image from 'next/image'
 import HeaderImage from '../img/header_image.png'
 import Link from 'next/link'
+import AnniversaryImage from '../img/anniversary.jpg'
 
 function Section({ children, variant = 'cream', sx }) {
   const isWhite = variant === 'white'
@@ -42,7 +43,7 @@ function Home() {
         component="header"
         sx={{
           position: 'relative',
-          minHeight: 420,
+          minHeight: { xs: 230, sm: 315, md: 415 },
           overflow: 'hidden',
         }}
       >
@@ -57,21 +58,43 @@ function Home() {
       </Box>
 
       {/* TITLE (cream) */}
-      <Section variant="cream" sx={{ pt: { xs: 0, md: 4 } }}>
-        <Typography variant="overline" sx={{ textAlign: 'center', fontSize: '1.2rem', opacity: 0.9 }}>
+      <Section variant="cream" sx={{ display: 'grid', gridAutoRows: 'auto', gridTemplateColumns: '1fr', pt: { xs: 3, md: 4 } }}>
+        <Typography variant="overline" sx={{ textAlign: 'center', fontSize: '1.2rem', opacity: 0.9, lineHeight: 2.75 }}>
           You&apos;re invited to celebrate
         </Typography>
-        <Typography sx={{ textAlign: 'center'}} variant="h1" component="h1">
+        <Typography sx={{ textAlign: 'center' }} variant="h1" component="h1">
           Eric &amp; Laura&apos;s
           <br />
           Anniversary
         </Typography>
         <Typography
           variant="overline"
-          sx={{ mt: 2, fontSize: '1.2rem', letterSpacing: '0.35em', textAlign: 'center' }}
+          sx={{ pb: 2, mt: 2, fontSize: '1.2rem', letterSpacing: '0.35em', textAlign: 'center', lineHeight: 3.5 }}
         >
-           February 6 · 2027
+          February 6, 2027 · 7PM
         </Typography>
+
+        <Box
+          sx={{
+            width: '100%',
+            maxWidth: { xs: 280, sm: 340, md: 380 },
+            mt: { xs: 3, md: 4 },
+            p: { xs: 1, md: 1.5 },
+            bgcolor: 'background.paper',
+            border: '1px solid',
+            borderColor: 'divider',
+            boxShadow: '0 8px 24px rgba(0, 0, 0, 0.08)',
+            placeSelf: 'center center',
+          }}
+        >
+          <Image
+            src={AnniversaryImage}
+            alt="Eric and Laura on vacation"
+            sizes="(max-width: 600px) 280px, (max-width: 900px) 340px, 380px"
+            placeholder="blur"
+            style={{ width: '100%', height: 'auto', display: 'block' }}
+          />
+        </Box>
       </Section>
 
       {/* DATE & LOCATION (white) */}
@@ -80,8 +103,11 @@ function Home() {
           Save the Date
         </Typography>
         <Typography variant="h2" sx={{ textAlign: 'center'}}>Saturday</Typography>
-        <Typography variant="h2" sx={{ textAlign: 'center', fontStyle: 'italic', fontWeight: 300 }}>
+        <Typography sx={{ opacity: 0.9, fontSize: '2.5rem', textAlign: 'center', fontStyle: 'italic', fontWeight: 300 }}>
           February 6, 2027
+        </Typography>
+        <Typography sx={{ opacity: 0.9, fontSize: '2.5rem', textAlign: 'center', fontStyle: 'italic', fontWeight: 300 }}>
+          7 PM
         </Typography>
 
         <Stack sx={{ display:'grid', py: 4}}>
@@ -91,8 +117,11 @@ function Home() {
         <Typography variant="overline" color="primary" sx={{ textAlign: 'center', fontWeight: 'bold', fontSize: '1.2rem'}}>
           Where
         </Typography>
-        <Typography variant="h3" sx={{ textAlign: 'center'}}>Wild Heaven</Typography>
-        <Typography variant="body1" color="text.secondary" sx={{ textAlign: 'center', fontSize: '1.55rem'}}>
+        <Typography sx={{ textAlign: 'center', fontSize: '1.55rem'}}>Wild Heaven Brewery</Typography>
+        <Typography sx={{ textAlign: 'center', fontSize: '1.55rem'}}>
+          135B Maple St
+        </Typography>
+        <Typography sx={{ textAlign: 'center', fontSize: '1.55rem'}}>
           Avondale Estates, GA
         </Typography>
 
@@ -124,6 +153,16 @@ function Home() {
         </Typography>
         <Typography variant="body1" color="text.secondary" sx={{ fontStyle: 'italic', fontSize: '1.3rem' }}>
           The venue is indoor/outdoor.
+        </Typography>
+      </Section>
+
+      {/* GIFTS (white) */}
+      <Section variant="white">
+        <Typography variant="overline" color="primary" sx={{ fontWeight: 'bold', fontSize: '1.2rem'}}>
+          Gifts
+        </Typography>
+        <Typography variant="body1" sx={{ pt: 2 }}>
+          Gifts are not necessary. Your company is the only thing on our wishlist.
         </Typography>
       </Section>
 

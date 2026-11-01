@@ -1,4 +1,4 @@
-import { Cormorant } from 'next/font/google'
+import { Cormorant, Crimson_Pro } from 'next/font/google'
 import { createTheme } from '@mui/material/styles'
 
 export const cormorant = Cormorant({
@@ -8,20 +8,44 @@ export const cormorant = Cormorant({
   display: 'swap',
 })
 
+export const crimsonPro = Crimson_Pro({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  display: 'swap',
+})
+
 const theme = createTheme({
   palette: {
-    primary: { main: '#6f7f6b' },       // muted sage
+    primary: { main: '#6f7f6b' },
     text: { primary: '#3a3835', secondary: '#7a756d' },
     background: { default: '#faf7f2', paper: '#ffffff' },
     divider: '#d9d2c5',
   },
   typography: {
-    fontFamily: cormorant.style.fontFamily,
+    // Default font for everything
+    fontFamily: crimsonPro.style.fontFamily,
     fontSize: 16,
-    h1: { fontWeight: 300, fontSize: 'clamp(2.5rem, 7vw, 5rem)', lineHeight: 1.1, letterSpacing: '0.02em' },
-    h2: { fontWeight: 400, fontSize: 'clamp(1.8rem, 4vw, 2.75rem)', lineHeight: 1.2 },
-    h3: { fontWeight: 500, fontSize: '1.6rem', lineHeight: 1.3 },
-    body1: { fontWeight: 500, fontSize: '1.25rem', lineHeight: 1.7 },
+    h1: {
+      fontFamily: cormorant.style.fontFamily,
+      fontWeight: 300,
+      fontSize: 'clamp(2.5rem, 7vw, 5rem)',
+      lineHeight: 1.1,
+      letterSpacing: '0.02em',
+    },
+    h2: {
+      fontFamily: cormorant.style.fontFamily,
+      fontWeight: 400,
+      fontSize: 'clamp(1.8rem, 4vw, 2.75rem)',
+      lineHeight: 1.2,
+    },
+    h3: {
+      fontFamily: cormorant.style.fontFamily,
+      fontWeight: 500,
+      fontSize: '1.6rem',
+      lineHeight: 1.3,
+    },
+    body1: { fontWeight: 400, fontSize: '1.25rem', lineHeight: 1.7 },
     overline: {
       fontWeight: 600,
       fontSize: '0.85rem',

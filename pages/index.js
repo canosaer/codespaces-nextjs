@@ -66,6 +66,12 @@ function Home() {
           <br />
           Anniversary
         </Typography>
+        <Typography
+          variant="overline"
+          sx={{ mt: 2, fontSize: '1.2rem', letterSpacing: '0.35em', textAlign: 'center' }}
+        >
+           February 6 · 2027
+        </Typography>
       </Section>
 
       {/* DATE & LOCATION (white) */}
@@ -75,7 +81,7 @@ function Home() {
         </Typography>
         <Typography variant="h2" sx={{ textAlign: 'center'}}>Saturday</Typography>
         <Typography variant="h2" sx={{ textAlign: 'center', fontStyle: 'italic', fontWeight: 300 }}>
-          February 6, 2026
+          February 6, 2027
         </Typography>
 
         <Stack sx={{ display:'grid', py: 4}}>

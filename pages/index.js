@@ -70,7 +70,7 @@ function Home() {
           variant="overline"
           sx={{ mt: 2, fontSize: '1.2rem', letterSpacing: '0.35em', textAlign: 'center' }}
         >
-          Saturday · February 6 · 2026
+          February 6 · 2026
         </Typography>
       </Section>
 
@@ -122,7 +122,7 @@ function Home() {
           No dress code, so please wear whatever makes you feel comfortable.
           Sequins or flannel, it&rsquo;s all welcome!
         </Typography>
-        <Typography variant="body1" color="text.secondary" sx={{ fontStyle: 'italic', fontSize: '1.4rem' }}>
+        <Typography variant="body1" color="text.secondary" sx={{ fontStyle: 'italic', fontSize: '1.3rem' }}>
           The venue is indoor/outdoor.
         </Typography>
       </Section>

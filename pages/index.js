@@ -57,7 +57,7 @@ function Home() {
       </Box>
 
       {/* TITLE (cream) */}
-      <Section variant="cream" sx={{ pt: { xs: 3, md: 4 } }}>
+      <Section variant="cream" sx={{ pt: { xs: 0, md: 4 } }}>
         <Typography variant="overline" sx={{ textAlign: 'center', fontSize: '1.2rem', opacity: 0.9 }}>
           You&apos;re invited to celebrate
         </Typography>

@@ -66,12 +66,6 @@ function Home() {
           <br />
           Anniversary
         </Typography>
-        <Typography
-          variant="overline"
-          sx={{ mt: 2, fontSize: '1.2rem', letterSpacing: '0.35em', textAlign: 'center' }}
-        >
-          February 6 · 2026
-        </Typography>
       </Section>
 
       {/* DATE & LOCATION (white) */}
